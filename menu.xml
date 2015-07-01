@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="Openbox 3">
+  <item label="Firefox">
+    <action name="Execute"><execute>firefox</execute></action>
+  </item>
+  <item label="Terminal">
+    <action name="Execute"><execute>xfce4-terminal</execute></action>
+  </item>
+  <item label="PCMan">
+    <action name="Execute"><execute>pcmanfm</execute></action>
+  </item>
+  <item label="Pidgin">
+    <action name="Execute"><execute>pidgin</execute></action>
+  </item>
+  <item label="Gimp">
+    <action name="Execute"><execute>gimp</execute></action>
+  </item>
+  <separator />
+  <menu id="client-list-menu" />
+  <menu id="OpenBox" label="OpenBox">
+    <item label="ObConf">
+      <action name="Execute"><execute>obconf</execute></action>
+    </item>
+    <item label="GTK Themes">
+      <action name="Execute"><execute>gtk-chtheme</execute></action>
+    </item>
+    <item label="Reconfigure">
+      <action name="Reconfigure" />
+    </item>
+    <item label="Restart">
+      <action name="Restart" />
+    </item>
+  </menu>
+  <menu execute="exploitation" id="Exploitation" label="Exploitation" />
+  <menu execute="nekomenu" id="NekoMenu" label="Neko Menu" />
+  <separator />
+  <item label="Exit">
+    <action name="Exit" />
+  </item>
+</menu>
+</openbox_menu>
